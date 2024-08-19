@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Library</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+    </head>
+    <body>
+        <h1>Library Books</h1>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
 
-</body>
+        <dialog id="bookDialog">
+            <h1>Enter A New Book:</h1>
+            <form>
+                <p>
+                    <label for="bookTitle">Title:</label><br>
+                    <input type="text" id="bookTitle" name="bookTitle">
+                </p>
+                <p>
+                    <label for="bookAuthor">Author:</label><br>
+                    <input type="text" id="bookAuthor" name="bookAuthor">
+                </p>
+                <p>
+                    <label for="bookPages">Pages:</label><br>
+                    <input type="text" id="bookPages" name="bookPages">
+                </p>
+                <div>
+                    <button value="cancel" formmethod="dialog">Cancel</button>
+                    <button id="confirmButton" value="default">Submit</button>
+                </div>
+            </form>
+
+        </dialog>
+        <div>
+            <button id="showDialog">Add a new book</button>
+        </div>
+        <output></output>
+
+    </body>
+    <script src="script.js"></script>
 </html>
